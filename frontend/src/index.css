@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-[28px];
+    @apply font-bold;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  h3 {
+    @apply text-base;
+    @apply font-bold;
+  }
+  h4 {
+    @apply text-sm;
+  }
+
+  button {
+    @apply rounded-small-radius;
+  }
+
+  .action-btn {
+    @apply rounded-2xl;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.action-btn {
+  padding: 14px;
+}

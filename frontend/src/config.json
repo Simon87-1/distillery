@@ -1,0 +1,11 @@
+{
+  "cerner-provider-distillery": {
+    "client_id": "taken from .env.local",
+    "scope": "patient/DocumentReference.read patient/DiagnosticReport.read patient/Patient.read patient/Binary.read openid profile online_access",
+    "redirectUri": "http://localhost:8000/distillery",
+    "url": "https://fhir-ehr-code.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d",
+    "comments": {
+      "note1": "Cerner"
+    }
+  }
+}

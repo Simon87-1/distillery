@@ -1,0 +1,22 @@
+{
+  "cerner-provider-distillery": {
+    "client_id": "taken from .env.local",
+    "scope": "patient/DocumentReference.read patient/DiagnosticReport.read patient/Patient.read patient/Binary.read openid profile online_access",
+    "redirectUri": "http://localhost:8000/distillery",
+    "url": "https://fhir-ehr-code.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d",
+    "comments": {
+      "note1": "Cerner"
+    }
+  },
+  "oscar-provider-distillery" : {
+    "client_id": "taken from .env.local",
+    "scope": "openid user/DocumentReference.read user/DiagnosticReport.read user/Patient.read launch/patient",
+    "redirectUri": "http://localhost:8000/distillery",
+    "url": "https://apps-health.kai-oscar.com/kaiemr/api/fhir/r4/clinic",
+    "comments": {
+        "note1": "Oscar sandbox"
+    },
+    "completeInTarget": true,
+    "pkceMode": "unsafeV1"
+  }
+}

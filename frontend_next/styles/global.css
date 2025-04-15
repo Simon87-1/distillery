@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-[28px];
+    @apply font-bold;
+  }
+  h2 {
+    @apply text-xl;
+    @apply font-bold;
+  }
+  h3 {
+    @apply text-base;
+    @apply font-bold;
+  }
+  h4 {
+    @apply text-sm;
+  }
+  h5 {
+    @apply text-xs;
+    @apply font-semibold;
+  }
+
+  button {
+    @apply rounded-small;
+  }
+
+  .action-btn {
+    @apply rounded-2xl;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  @apply bg-screen;
+  @apply text-black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.action-btn {
+  padding: 14px;
+}
+
+.reports-filter-active:not(:has(+ .reports-filter-active)) {
+  @apply rounded-r-medium;
+}
+.reports-filter-active .filter-label {
+  @apply color-main;
+}
+
+.MuiDataGrid-columnHeader .MuiDataGrid-columnSeparator {
+  display: none;
+}
+.MuiDataGrid-root {
+  @apply shadow-card;
+  @apply rounded-2xl;
+  border: none;
+}
+.MuiDataGrid {
+  border: none;
+}
+.MuiDataGrid-columnHeaderTitle {
+  @apply uppercase;
+  @apply text-secondary;
+  @apply font-semibold;
+  @apply text-xs;
+}
+
+[data-theme="oscar"] {
+  --main-gradient: linear-gradient(251.94deg, #14584a 0%, #143736 100%);
+  --btn-main-gradient: linear-gradient(251.94deg, #4a9484 0%, #14735e 100%);
+  --btn-main-gradient-hover: linear-gradient(
+    251.94deg,
+    #368070 0%,
+    #005540 100%
+  );
+  --box-shadow-main-btn: 0px 4px 12px 0px #00a58466;
+  --box-shadow-main-btn-hover: 0px 8px 12px 0px #22978066;
+  --color-main: #176e5b;
+  --color-light-main: #dee9e1;
+  --color-main-dark: #00503d;
+}
+
+[data-theme="cerner"] {
+  --main-gradient: linear-gradient(251.94deg, #004c82 0%, #022f4f 100%);
+  --btn-main-gradient: linear-gradient(251.94deg, #0e9ee7 0%, #006fa8 100%);
+  --btn-main-gradient-hover: linear-gradient(
+    251.94deg,
+    #0c82c4 0%,
+    #005285 100%
+  );
+  --box-shadow-main-btn: 0px 4px 12px 0px #0090d966;
+  --box-shadow-main-btn-hover: 0px 8px 12px 0px #22978066;
+  --color-main: #0090d9;
+  --color-light-main: #d7e9f6;
+  --color-main-dark: #005285;
+}
+
+/* Tailwind Utility */
+.main-gradient {
+  background-image: var(--main-gradient);
+}
+.btn-main-gradient {
+  @apply font-bold;
+  @apply text-base;
+  background-image: var(--btn-main-gradient);
+  box-shadow: var(--box-shadow-main-btn);
+}
+.btn-main-gradient:hover {
+  background-image: var(--btn-main-gradient-hover);
+  box-shadow: var(--box-shadow-main-btn-hover);
+}
+.btn-main-gradient:disabled {
+  background-image: none;
+  background-color: #8d95a2;
+}
+.shadow-main-btn {
+  box-shadow: var(--box-shadow-main-btn);
+}
+
+.color-main {
+  color: var(--color-main);
+}
+.bg-main {
+  background-color: var(--color-main);
+}
+.bg-light-main {
+  background-color: var(--color-light-main) !important;
+}

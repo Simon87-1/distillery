@@ -1,0 +1,14 @@
+.original-text,
+.summary-text {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  padding: 20px;
+  border: 1px solid rgba(49, 51, 63, 0.2);
+  border-radius: 0.45rem;
+  overflow: auto;
+  /* Add this line to enable scrolling */
+  /* height: 700px; */
+  /* Add this line to make the elements fill the container height */
+}
